@@ -32,7 +32,7 @@ struct HikeDetail: View {
                             .foregroundColor(value.1 == self.dataToShow
                                 ? Color.gray
                                 : Color.accentColor)
-                            .animation(nil)
+                           .animation(nil)
                     }
                 }
             }

@@ -11,7 +11,7 @@ extension Animation {
     static func ripple(index: Int) -> Animation {
         Animation.spring(dampingFraction: 0.5)
             .speed(2)
-            .delay(0.03 + Double(index))
+           // .delay(0.03 + Double(index))
     }
 }
 
@@ -73,8 +73,6 @@ struct HikeGraph_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            HikeGraph(hike: hike, path: \.elevation)
-                .frame(height: 200)
             HikeGraph(hike: hike, path: \.elevation)
                 .frame(height: 200)
             HikeGraph(hike: hike, path: \.heartRate)
